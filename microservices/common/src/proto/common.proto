@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package common;
+
+message Empty {}
+
+message TestData {
+  int32 id = 1;
+  string name = 2;
+}
+
+service CommonSerivce {
+  rpc Test (Empty) returns (TestData) {}
+}
